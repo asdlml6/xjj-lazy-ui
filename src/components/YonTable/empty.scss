@@ -1,0 +1,29 @@
+.megatron-empty-data-box {
+    width: fit-content;
+    table {
+        table-layout: auto;
+        width: auto;
+        height: auto;
+        th {
+            background-color: #F4F4F4;
+            font-size: 14px;
+        }
+    }
+    .megatron-emty-table-body {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .image {
+            width: 80px;
+            height: 80px;
+            background-image: url(../../assets/images/megatron-empty-table.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}

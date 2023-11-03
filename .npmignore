@@ -1,0 +1,5 @@
+# ignore dumi
+dumi/**/*
+dist/**/*
+build/**/*
+node_modules/**/*

@@ -1,0 +1,195 @@
+@import '../../variable.scss';
+
+.YonStep-item {
+    // width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    .YonStep-item-title {
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+        padding: 10px;
+        box-sizing: border-box;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: break-all;
+    }
+    .ballanline-box {
+        width: 100%;
+        display: flex;
+        min-height: 35px;
+        position: relative;
+        box-sizing: border-box;
+        justify-content: center;
+        .ballanline-box-ball {
+            width: 15px;
+            height: 15px;
+            z-index: $z1level;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: $yonstep-finish-ball-background;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .ballanline-box-final-ball {
+            width: 32px;
+            height: 32px;
+            z-index: $z1level;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background: rgba(88,140,233,0.2);
+            border: 1px solid rgba(88,140,233,0.72);
+            .ball {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background: $yonstep-process-ball-background;
+                box-sizing: border-box;
+            }
+        }
+        .ballanline-box-line {
+            width: 100%;
+            height: 1px;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(0%, -50%);
+            .line {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .ball-wait {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: $yonstep-wait-ball-background;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .ball-error {
+            width: 15px;
+            height: 15px;
+            z-index: $z1level;
+            border-radius: 50%;
+            box-sizing: border-box;
+            background-color: $yonstep-error-ball-background;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .yonStep-item-people {
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+        box-sizing: border-box;
+        padding: 10px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: break-all;
+    }
+}
+.YonStep-vertical-item {
+    display: flex;
+    align-items: flex-start;
+    height: 100px;
+    .left-box {
+        width: 35px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        .left-box-ball {
+            width: 100%;
+            height: fit-content;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .finish-ball, .wait-ball, .error-ball {
+                width: 15px;
+                height: 15px;
+                z-index: $z1level;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background-color: $yonstep-finish-ball-background;
+            }
+            .wait-ball {
+                background-color: $yonstep-wait-ball-background;
+            }
+            .error-ball {
+                background-color: $yonstep-error-ball-background;
+            }
+            .process-ball {
+                width: 32px;
+                height: 32px;
+                z-index: $z1level;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background: rgba(88,140,233,0.2);
+                border: 1px solid rgba(88,140,233,0.72);
+                .ball {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background: $yonstep-process-ball-background;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        .left-box-line {
+            width: 100%;
+            flex: 1;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .line {
+                width: 1px;
+                height: 100%;
+                box-sizing: border-box;
+            }
+        }
+    }
+    .right-box {
+        flex: 1;
+        height: 100%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        .right-box-title {
+            width: 100%;
+            height: 35%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+        .right-box-description {
+            width: 100%;
+            height: 65%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@import '../../variable.scss';
+.yon-drawer-box {
+    box-sizing: border-box;
+    .yon-drawer-mask-box {
+        box-sizing: border-box;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        position: fixed;
+        transition: all .3s;
+        z-index: 1000;
+        .yon-drawer-content-box {
+            box-sizing: border-box;
+            position: absolute;
+            transition: all .3s;
+            background-color: $default-background;
+        }
+        .yon-drawer-content-box-right {
+            @extend .yon-drawer-content-box;
+            width: 500px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            transform: translateX(100%);
+        }
+        .yon-entered-right {
+            transform: translateX(0%);
+        }
+        .yon-drawer-content-box-left {
+            @extend .yon-drawer-content-box;
+            width: 500px;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+            transform: translateX(-100%);
+        }
+        .yon-entered-left {
+            transform: translateX(0%);
+        }
+        .yon-drawer-content-box-top {
+            @extend .yon-drawer-content-box;
+            height: 500px;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            transform: translateY(-100%);
+        }
+        .yon-entered-top {
+            transform: translateX(0%);
+        }
+        .yon-drawer-content-box-bottom {
+            @extend .yon-drawer-content-box;
+            height: 500px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            transform: translateY(100%);
+        }
+        .yon-entered-bottom {
+            transform: translateX(0%);
+        }
+    }
+    .yon-drawer-mask-box-fixedContainer {
+        position: absolute;
+    }
+    .yon-drawer-enter-background {
+        background-color: $common-mask-background;
+    }
+    .yon-drawer-fade-background {
+        background-color: transparent;
+    }
+}

@@ -1,0 +1,17 @@
+.yon-horizontal-steps {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+.yon-vertical-steps {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}

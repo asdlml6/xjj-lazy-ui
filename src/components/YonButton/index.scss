@@ -1,0 +1,27 @@
+@import '../../variable.scss';
+
+.yon-button {
+  width: 107px;
+  height: 43px;
+  border-radius: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yon-default-button {
+  background: $default-background;
+  background: #FFFFFF;
+  border-radius: 21px;
+  border: 1px solid #BFBFBF;
+}
+.yon-main-button {
+  background: $main-button-background;
+  font-size: $default-font-size;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: $main-button-font-color;
+}
+.yon-disabled-button {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
