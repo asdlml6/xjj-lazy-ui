@@ -47,7 +47,6 @@ class DataTable extends React.Component<DataTableProps, DataTableState> {
     render (){
         const { bordered, data = [], width = '1000px', rowHeight, headHeight, footer } = this.props;
         const { fixedLeftColumnArr = [], fixedRightColumnArr = [], freedomColumnArr = [] } = this.state;
-        console.log('footer是啥:', footer);
         return <div className = {`megatron-data-box ${bordered ? 'megatron-table-border' : ''}`}>
             <div className = 'top'>
                 {
