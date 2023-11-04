@@ -4,6 +4,5 @@ package-lock.json
 .history
 dumi/.umi
 dumi/.umi-production
-dumi/dist
 build/
 lib/

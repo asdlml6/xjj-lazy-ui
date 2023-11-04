@@ -9,7 +9,7 @@
 ```
 
 ```javascript
-  yarn add megatron xjj-lazy-ui --save
+  yarn add xjj-lazy-ui --save
 ```
 
 ## 示例
