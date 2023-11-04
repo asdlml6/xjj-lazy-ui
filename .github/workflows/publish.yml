@@ -1,0 +1,26 @@
+name: Publish Package To Npm
+on:
+  push:
+    # 指定 git push origin master 时触发工作流
+    branches:
+      - master
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - names: Setup Nodejs Environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - names: Install Dependencies
+        run: npm ci
+
+      - names: Publish Package
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_xjj_lazy_ui_TOKEN }}
