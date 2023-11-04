@@ -1,8 +1,8 @@
 const path = require('path');
 
 export default {
-    base: '/megatron-website/',
-    publicPath: '/megatron-website/',
+    base: '/xjj-lazy-ui/',
+    publicPath: '/xjj-lazy-ui/',
     chainWebpack(memo) {
       memo.plugins.delete('copy');
       memo.resolve.alias.set('xjj-lazy-ui', path.resolve(__dirname, '../../src/index.ts'));
