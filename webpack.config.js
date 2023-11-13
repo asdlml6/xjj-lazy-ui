@@ -41,7 +41,7 @@ module.exports = {
         path: path.join(__dirname,"./lib"),
         filename: '[name].js',
         libraryTarget: 'umd',
-        library: 'megatron',
+        library: 'xjj-lazy-ui',
     },
     module: {
         rules: [
